@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Passowrd Generator</title>
+</head>
+<body>
+    <h1>Generat a <span>random password</span></h1>
+    <p>Never use an insecure password again</p>
+    <button onclick="generatePwd()" id="generator" class="pws-generate">Generate passwords</button><br>
+    <input type="number" id="pwd-length" placeholder="how long password you want" ><br>
+    <p>Choose additional characters:</p>
+    <label>
+        <input type="checkbox"  class="check" id="include-numbers" checked>
+        Numbers
+    </label>
+    <label>
+        <input type="checkbox" class="check" id="include-symbols" checked>
+        Special symbols
+    </label>
+    <div class="show-pwd">
+        <div class="password" id="pwd1"></div>
+        <div class="password" id="pwd2"></div>
+
+    </div>
+    <p id="copy-message"></p>
+    <p class="error"></p>
+    
+</body>
+<script src="script.js"></script>
+</html>
